@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <style>
+            .add-to-favorite {
+                background-color: rgb(255, 242, 0);
+                color: black;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <h1 class="float-left">Posts</h1>
+                <button class="btn add-to-favorite float-right mt-3">
+                    Fav
+                </button>
+                <div class="clearfix"></div>
+                <div class="favorite-listing d-none"></div>
+                <form class="add-post w-25" enctype="multipart/form-data">
+                    <input
+                        type="text"
+                        name="title"
+                        placeholder="Title"
+                        class="form-control mt-2"
+                    />
+                    <input
+                        type="text"
+                        name="body"
+                        placeholder="Body"
+                        class="form-control mt-2"
+                    />
+                    <button class="btn mt-2">add</button>
+                </form>
+                <div class="product-listing"></div>
+            </div>
+        </div>
+        <script type="module" src="src/main.js"></script>
+    </body>
+</html>
